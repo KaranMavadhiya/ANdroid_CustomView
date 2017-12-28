@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Customview</string>
+
+    <string name="Muli_Light" translatable="false">Muli-Light.ttf</string>
+    <string name="Muli_Bold" translatable="false">Muli-Bold.ttf</string>
+    <string name="Muli_Italic" translatable="false">Muli-Italic.ttf</string>
+    <string name="Muli_Regular" translatable="false">Muli-Regular.ttf</string>
+    <string name="Muli_SemiBold" translatable="false">Muli-SemiBold.ttf</string>
+    <string name="Muli_SemiBoldItalic" translatable="false">Muli-SemiBoldItalic.ttf</string>
+</resources>

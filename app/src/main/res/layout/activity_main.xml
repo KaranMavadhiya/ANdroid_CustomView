@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.customview.customview.CustomFontTextView
+        android:id="@+id/customFontTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorAccent"
+        android:padding="5dp"
+        android:text="TextView"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small.Inverse"
+        android:textColor="@android:color/white" />
+
+    <com.customview.customview.CustomFontTextView
+        android:id="@+id/tv_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/customFontTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:text="Light"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:textColor="@android:color/black"
+        app:fontText="@string/Muli_Light" />
+
+    <com.customview.customview.CustomFontTextView
+        android:id="@+id/tv_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_light"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/tv_light"
+        android:text="Regular"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:textColor="@android:color/black"
+        app:fontText="@string/Muli_Regular" />
+
+    <com.customview.customview.CustomFontTextView
+        android:id="@+id/tv_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_regular"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/tv_regular"
+        android:text="Bold"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:textColor="@android:color/black"
+        app:fontText="@string/Muli_Bold" />
+
+    <com.customview.customview.CustomFontTextView
+        android:id="@+id/tv_italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_bold"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/tv_bold"
+        android:text="Italic"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:textColor="@android:color/black"
+        app:fontText="@string/Muli_Italic" />
+
+    <com.customview.customview.CustomFontTextView
+        android:id="@+id/tv_semi_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_light"
+        android:layout_below="@+id/tv_regular"
+        android:layout_marginTop="10dp"
+        android:text="Semi-Bold"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:textColor="@android:color/black"
+        app:fontText="@string/Muli_SemiBold" />
+
+    <com.customview.customview.CustomFontTextView
+        android:id="@+id/tv_semi_bold_italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_semi_bold"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/tv_semi_bold"
+        android:text="Semi-Bold-Italic"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:textColor="@android:color/black"
+        app:fontText="@string/Muli_SemiBoldItalic" />
+
+
+    <com.customview.customview.CustomFontTextView
+        android:id="@+id/customFontTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_semi_bold"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"
+        android:padding="5dp"
+        android:text="EditText"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small.Inverse"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_semi_bold"
+        android:layout_below="@+id/customFontTextView1"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            app:hintTextAppearance="@style/floatingLabel">
+
+            <com.customview.customview.CustomFontEditText
+                android:id="@+id/edit_first_name"
+                style="@style/editText"
+                android:hint="Firstname"
+                android:imeOptions="actionNext"
+                android:text="Karan"
+                app:fontText="@string/Muli_Regular" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            app:hintTextAppearance="@style/floatingLabel">
+
+            <com.customview.customview.CustomFontEditText
+                android:id="@+id/edit_last_name"
+                style="@style/editText"
+                android:hint="Lastname"
+                android:imeOptions="actionDone"
+                android:text="Mavadhiya"
+                app:fontText="@string/Muli_Italic" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <com.customview.customview.CustomFontTextView
+        android:id="@+id/customFontTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"
+        android:padding="5dp"
+        android:text="Button"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small.Inverse"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_semi_bold"
+        android:layout_below="@+id/customFontTextView2"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <com.customview.customview.CustomFontButton
+            style="@style/button"
+            android:layout_marginRight="5dp"
+            android:ems="7"
+            android:paddingBottom="20dp"
+            android:paddingTop="15dp"
+            android:text="Submit"
+            app:fontText="@string/Muli_SemiBold" />
+
+        <com.customview.customview.CustomFontButton
+            style="@style/button"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/sl_button_rounded_corner"
+            android:ems="7"
+            android:text="Submit"
+            app:fontText="@string/Muli_SemiBoldItalic" />
+
+    </LinearLayout>
+
+    <com.customview.customview.CustomFontTextView
+        android:id="@+id/customFontTextView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"
+        android:padding="5dp"
+        android:text="Image"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small.Inverse"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_semi_bold"
+        android:layout_below="@+id/customFontTextView3"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <com.customview.customview.RoundedImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/place_holder_landscape"
+            android:background="@color/colorAccent"/>
+
+        <com.customview.customview.SquareImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:src="@drawable/place_holder_landscape"
+            android:background="@color/colorAccent"/>
+
+    </LinearLayout>
+
+    <com.customview.customview.CustomFontTextView
+        android:id="@+id/customFontTextView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"
+        android:padding="5dp"
+        android:text="Spannable String"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small.Inverse"
+        android:textColor="@android:color/white" />
+
+    <com.customview.customview.CustomFontTextView
+        android:id="@+id/tv_spannable_string"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/customFontTextView4"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="5dp"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:textColor="@android:color/black"
+        app:fontText="@string/Muli_Light" />
+
+</RelativeLayout>
